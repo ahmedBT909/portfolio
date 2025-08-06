@@ -1,912 +1,1131 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Ahmed Saeed Farouk</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-    <link rel="stylesheet" href="css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
+<head>
+	<title>Ahmed Saeed Farouk</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="css/aos.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    
-    <link rel="stylesheet" href="css/flaticon.css">
-    <link rel="stylesheet" href="css/icomoon.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
 	<style>
 		:root {
-		  --primary-blue: #4361ee;
-		  --dark-blue: #3a0ca3;
-		  --light-blue: #4895ef;
-		  --dark: #212529;
-		  --light: #f8f9fa;
-		  --gray: #6c757d;
-		  --light-gray: #e9ecef;
+			--primary-blue: #4361ee;
+			--dark-blue: #3a0ca3;
+			--light-blue: #4895ef;
+			--dark: #212529;
+			--light: #f8f9fa;
+			--gray: #6c757d;
+			--light-gray: #e9ecef;
 		}
-		
+
 		.projects-section {
-		  padding: 5rem 0;
-		  background-color: #f8f9fa;
+			padding: 5rem 0;
+			background-color: #f8f9fa;
 		}
-		
+
 		.container {
-		  max-width: 1200px;
-		  margin: 0 auto;
-		  padding: 0 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 0 20px;
 		}
-		
+
 		.section-header {
-		  text-align: center;
-		  margin-bottom: 3.5rem;
+			text-align: center;
+			margin-bottom: 3.5rem;
 		}
-		
+
 		.section-title {
-		  font-size: 2.5rem;
-		  font-weight: 700;
-		  color: var(--dark);
-		  margin-bottom: 1rem;
+			font-size: 2.5rem;
+			font-weight: 700;
+			color: var(--dark);
+			margin-bottom: 1rem;
 		}
-		
+
 		.blue-highlight {
-		  color: var(--primary-blue);
-		  position: relative;
+			color: var(--primary-blue);
+			position: relative;
 		}
-		
+
 		.blue-highlight::after {
-		  content: '';
-		  position: absolute;
-		  bottom: 5px;
-		  left: 0;
-		  width: 100%;
-		  height: 8px;
-		  background-color: rgba(67, 97, 238, 0.2);
-		  z-index: -1;
+			content: '';
+			position: absolute;
+			bottom: 5px;
+			left: 0;
+			width: 100%;
+			height: 8px;
+			background-color: rgba(67, 97, 238, 0.2);
+			z-index: -1;
 		}
-		
+
 		.section-subtitle {
-		  color: var(--gray);
-		  font-size: 1.1rem;
-		  max-width: 700px;
-		  margin: 0 auto;
-		  line-height: 1.6;
+			color: var(--gray);
+			font-size: 1.1rem;
+			max-width: 700px;
+			margin: 0 auto;
+			line-height: 1.6;
 		}
-		
+
 		.projects-grid {
-		  display: grid;
-		  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
-		  gap: 2rem;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+			gap: 2rem;
 		}
-		
+
 		.project-card {
-		  background: white;
-		  border-radius: 10px;
-		  overflow: hidden;
-		  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
-		  transition: all 0.3s ease;
-		  display: flex;
-		  flex-direction: column;
-		  height: 100%;
+			background: white;
+			border-radius: 10px;
+			overflow: hidden;
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+			transition: all 0.3s ease;
+			display: flex;
+			flex-direction: column;
+			height: 100%;
 		}
-		
+
 		.project-card:hover {
-		  transform: translateY(-8px);
-		  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+			transform: translateY(-8px);
+			box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
 		}
-		
+
 		.project-image-container {
-		  position: relative;
-		  height: 220px;
-		  overflow: hidden;
+			position: relative;
+			height: 220px;
+			overflow: hidden;
 		}
-		
+
 		.project-image {
-		  width: 100%;
-		  height: 100%;
-		  object-fit: cover;
-		  transition: transform 0.5s ease;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			transition: transform 0.5s ease;
 		}
-		
+
 		.project-card:hover .project-image {
-		  transform: scale(1.05);
+			transform: scale(1.05);
 		}
-		
+
 		.project-overlay {
-		  position: absolute;
-		  top: 0;
-		  left: 0;
-		  right: 0;
-		  bottom: 0;
-		  background: rgba(0, 0, 0, 0.7);
-		  display: flex;
-		  align-items: center;
-		  justify-content: center;
-		  opacity: 0;
-		  transition: opacity 0.3s ease;
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background: rgba(0, 0, 0, 0.7);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			opacity: 0;
+			transition: opacity 0.3s ease;
 		}
-		
+
 		.project-card:hover .project-overlay {
-		  opacity: 1;
+			opacity: 1;
 		}
-		
+
 		.project-link {
-		  color: white;
-		  text-decoration: none;
-		  font-weight: 500;
-		  padding: 8px 18px;
-		  border: 2px solid white;
-		  border-radius: 30px;
-		  transition: all 0.3s ease;
-		  display: inline-flex;
-		  align-items: center;
-		  gap: 8px;
+			color: white;
+			text-decoration: none;
+			font-weight: 500;
+			padding: 8px 18px;
+			border: 2px solid white;
+			border-radius: 30px;
+			transition: all 0.3s ease;
+			display: inline-flex;
+			align-items: center;
+			gap: 8px;
 		}
-		
+
 		.project-link:hover {
-		  background: white;
-		  color: var(--primary-blue);
+			background: white;
+			color: var(--primary-blue);
 		}
-		
+
 		.project-link.no-link {
-		  cursor: default;
-		  border-color: var(--gray);
-		  color: var(--gray);
+			cursor: default;
+			border-color: var(--gray);
+			color: var(--gray);
 		}
-		
+
 		.project-link.no-link:hover {
-		  background: transparent;
-		  color: var(--gray);
+			background: transparent;
+			color: var(--gray);
 		}
-		
+
 		.project-info {
-		  padding: 1.8rem;
-		  flex-grow: 1;
-		  display: flex;
-		  flex-direction: column;
+			padding: 1.8rem;
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
 		}
-		
+
 		.project-title {
-		  font-size: 1.3rem;
-		  font-weight: 700;
-		  color: var(--dark);
-		  margin-bottom: 1rem;
-		  line-height: 1.3;
+			font-size: 1.3rem;
+			font-weight: 700;
+			color: var(--dark);
+			margin-bottom: 1rem;
+			line-height: 1.3;
 		}
-		
+
 		.project-description {
-		  color: var(--gray);
-		  font-size: 0.95rem;
-		  line-height: 1.6;
-		  margin-bottom: 1.5rem;
-		  flex-grow: 1;
+			color: var(--gray);
+			font-size: 0.95rem;
+			line-height: 1.6;
+			margin-bottom: 1.5rem;
+			flex-grow: 1;
 		}
-		
+
 		.project-tags {
-		  display: flex;
-		  flex-wrap: wrap;
-		  gap: 8px;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 8px;
 		}
-		
+
 		.tag {
-		  background-color: var(--light-gray);
-		  color: var(--dark);
-		  padding: 4px 12px;
-		  border-radius: 20px;
-		  font-size: 0.8rem;
-		  font-weight: 500;
+			background-color: var(--light-gray);
+			color: var(--dark);
+			padding: 4px 12px;
+			border-radius: 20px;
+			font-size: 0.8rem;
+			font-weight: 500;
 		}
-		
+
 		/* Font Awesome icons */
 		.fas {
-		  font-family: 'Font Awesome', sans-serif;
+			font-family: 'Font Awesome', sans-serif;
 		}
-		
+
 		/* Responsive adjustments */
 		@media (max-width: 1200px) {
-		  .projects-grid {
-			grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-		  }
+			.projects-grid {
+				grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+			}
 		}
-		
+
 		@media (max-width: 992px) {
-		  .projects-grid {
-			grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-		  }
+			.projects-grid {
+				grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+			}
 		}
-		
+
 		@media (max-width: 768px) {
-		  .section-title {
-			font-size: 2.2rem;
-		  }
-		  
-		  .section-subtitle {
-			font-size: 1rem;
-		  }
-		  
-		  .project-image-container {
-			height: 200px;
-		  }
+			.section-title {
+				font-size: 2.2rem;
+			}
+
+			.section-subtitle {
+				font-size: 1rem;
+			}
+
+			.project-image-container {
+				height: 200px;
+			}
 		}
-		
+
 		@media (max-width: 576px) {
-		  .projects-section {
-			padding: 4rem 0;
-		  }
-		  
-		  .projects-grid {
-			grid-template-columns: 1fr;
-		  }
-		  
-		  .section-header {
-			margin-bottom: 2.5rem;
-		  }
-		  
-		  .project-info {
-			padding: 1.5rem;
-		  }
+			.projects-section {
+				padding: 4rem 0;
+			}
+
+			.projects-grid {
+				grid-template-columns: 1fr;
+			}
+
+			.section-header {
+				margin-bottom: 2.5rem;
+			}
+
+			.project-info {
+				padding: 1.5rem;
+			}
 		}
-		</style>
-    <style>
-      .footer-skills {
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        margin-top: 10px;
-        width: 100%;
-      }
-      .skill-block {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 100%;
-        margin-bottom: 0;
-      }
-      .skill-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: var(--light-gray);
-        color: var(--dark);
-        border-radius: 20px;
-        padding: 6px 16px;
-        font-size: 0.95rem;
-        font-weight: 500;
-        box-shadow: 0 2px 6px rgba(67, 97, 238, 0.07);
-        transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-        cursor: default;
-        user-select: text;
-        margin-bottom: 6px;
-      }
-      .skill-detail-box {
-        background: #f8f9fa;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(67,97,238,0.07);
-        padding: 12px 16px;
-        color: #212529;
-        font-size: 1.02rem;
-        margin-top: 0;
-        margin-bottom: 2px;
-        width: 100%;
-        word-break: break-word;
-      }
-      .skill-badge .icon-laptop:before { content: "\f109"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-mobile:before { content: "\f10b"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-gears:before { content: "\f085"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-code:before { content: "\f121"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-python:before { content: "\f3e2"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-javascript:before { content: "\f3b8"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-java:before { content: "\f4e4"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-react:before { content: "\f41b"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-bootstrap:before { content: "\f836"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-database:before { content: "\f1c0"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-link:before { content: "\f0c1"; font-family: 'FontAwesome'; }
-      .skill-badge .icon-github:before { content: "\f09b"; font-family: 'FontAwesome'; }
-    </style>
-  </head>
-  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
-	  
-	  
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	    <div class="container">
-	      <a class="navbar-brand" href="index.html"><span>A</span>hmed</a>
-	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="oi oi-menu"></span> Menu
-	      </button>
+	</style>
+	<style>
+		.footer-skills {
+			display: flex;
+			flex-direction: column;
+			gap: 18px;
+			margin-top: 10px;
+			width: 100%;
+		}
 
-	      <div class="collapse navbar-collapse" id="ftco-nav">
-	        <ul class="navbar-nav nav ml-auto">
-	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
-	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
-	          <li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
-	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
-	        </ul>
-	      </div>
-	    </div>
-	  </nav>
-	  <section class="hero-wrap js-fullheight" id="home-section">
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
-          <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
-          	<div class="text text-center">
-          		<span class="subheading">Hello! I am</span>
-		  				<h1>Ahmed Saeed Farouk</h1>
-			  				<h2>I'm a <span class="txt-rotate" data-period="2000" data-rotate='[ "Software Engineer.", "Odoo Developer.", "IT Specialist." ]'></span></h2>
-							</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="mouse">
-				<a href="#" class="mouse-icon">
-					<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
-				</a>
-			</div>
-    </section>
+		.skill-block {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 100%;
+			margin-bottom: 0;
+		}
 
-    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
-    	<div class="container">
-    		<div class="row d-flex no-gutters">
-    			<div class="col-md-6 col-lg-6 d-flex">
-            <div class="img-about img d-flex align-items-stretch justify-content-center align-items-center">
-    					<div class="overlay"></div>
-              <div class="img d-flex align-self-stretch align-items-center justify-content-center" style="background-image:url(images/image.png); width:460px; height:460px; background-size:cover; background-position:center; border-radius:50%; margin:auto;"></div>
-    				</div>
-    			</div>
-    			<div class="col-md-6 col-lg-6 pl-md-5 py-5">
-    				<div class="row justify-content-start pb-3">
-		          <div class="col-md-12 heading-section ftco-animate">
-		          	<h1 class="big">About</h1>
-		            <h2 class="mb-4">About Me</h2>
-                <h4 class="mb-3">Software Engineer | Odoo Developer | IT Specialist</h4>
-                <p>Full Stack Developer skilled in web development (Frontend & Backend), Android app development using native Kotlin, and Odoo customization.<br>Develop and manage electronic systems using PHP and CodeIgniter.<br>Oversee control panels for company websites using cPanel.<br>Ensure system efficiency and troubleshoot technical issues.<br>Develop and customize Odoo ERP modules.<br>Head of Social Media – Google Developer Groups on Campus: NCTU.<br>Participated in "Noah" Competition (Twice).<br>Participant in the Third Youth Forum on Artificial Intelligence.<br>Techno Black: Contributor to the AI-powered educational platform providing programming courses and language reviews.</p>
-		            <ul class="about-info mt-4 px-md-0 px-2">
-                  <li class="d-flex"><span>Name:</span> <span>Ahmed Saeed Farouk</span></li>
-                  <li class="d-flex"><span>Address:</span> <span>Egypt</span></li>
-                  <li class="d-flex"><span>Email:</span> <span><a href="mailto:ahmedsaeedfarouk.bt@gmail.com">ahmedsaeedfarouk.bt@gmail.com</a></span></li>
-                  <li class="d-flex"><span>Phone: </span> <span><a href="tel:+201027789053">+201027789053</a></span></li>
-                  <li class="d-flex"><span>LinkedIn:</span> <span><a href="https://www.linkedin.com/in/ahmed-saeed-579921321/" target="_blank">ahmed-saeed-579921321</a></span></li>
-                  <li class="d-flex"><span>GitHub:</span> <span><a href="https://github.com/ahmedBT909" target="_blank">ahmedBT909</a></span></li>
-		            </ul>
-		          </div>
-		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p><a href="CV_AhmedSaeed (1).pdf" class="btn btn-primary py-3 px-3" download>Download CV</a></p>
-              </div>
-	          </div>
-	        </div>
-        </div>
-    	</div>
-    </section>
+		.skill-badge {
+			display: inline-flex;
+			align-items: center;
+			gap: 6px;
+			background: var(--light-gray);
+			color: var(--dark);
+			border-radius: 20px;
+			padding: 6px 16px;
+			font-size: 0.95rem;
+			font-weight: 500;
+			box-shadow: 0 2px 6px rgba(67, 97, 238, 0.07);
+			transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+			cursor: default;
+			user-select: text;
+			margin-bottom: 6px;
+		}
+
+		.skill-detail-box {
+			background: #f8f9fa;
+			border-radius: 10px;
+			box-shadow: 0 2px 8px rgba(67, 97, 238, 0.07);
+			padding: 12px 16px;
+			color: #212529;
+			font-size: 1.02rem;
+			margin-top: 0;
+			margin-bottom: 2px;
+			width: 100%;
+			word-break: break-word;
+		}
+
+		.skill-badge .icon-laptop:before {
+			content: "\f109";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-mobile:before {
+			content: "\f10b";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-gears:before {
+			content: "\f085";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-code:before {
+			content: "\f121";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-python:before {
+			content: "\f3e2";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-javascript:before {
+			content: "\f3b8";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-java:before {
+			content: "\f4e4";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-react:before {
+			content: "\f41b";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-bootstrap:before {
+			content: "\f836";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-database:before {
+			content: "\f1c0";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-link:before {
+			content: "\f0c1";
+			font-family: 'FontAwesome';
+		}
+
+		.skill-badge .icon-github:before {
+			content: "\f09b";
+			font-family: 'FontAwesome';
+		}
+	</style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 
 
-
-    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-md-3">
-				    <nav id="navi">
-					    <ul>
-					      <li><a href="#page-1">Education</a></li>
-					      <li><a href="#page-2">Experience</a></li>
-					      <li><a href="#page-3">Skills</a></li>
-					      <li><a href="#page-4">Achievements</a></li>
-					    </ul>
-					  </nav>
-					</div>
-					<div class="col-md-9">
-					  <div id="page-1" class= "page one">
-					  	<h2 class="heading">Education</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Sep 2019 - July 2022</span>
-		    					<h2>Programming Diploma</h2>
-		    					<span class="position">International Academy of Computers, Egypt</span>
-		    					<p>Diploma in Computer Science</p>
-	    					</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Sep 2022 - Present</span>
-		    					<h2>Software Engineering</h2>
-		    					<span class="position">New Cairo Technological University, Faculty of Information Technology</span>
-		    				</div>
-	    				</div>
-					  </div>
-
-					  <div id="page-2" class= "page two">
-					  	<h2 class="heading">Experience</h2>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">Aug 2024 - Present</span>
-		    					<h2>Global Elite</h2>
-		    					<span class="position">Software Engineering | IT Specialist | Odoo Developer</span>
-		    					<p>Develop and manage electronic systems using PHP and CodeIgniter. Oversee control panels for company websites using cPanel. Ensure system efficiency and troubleshoot technical issues. Develop and customize Odoo ERP modules.</p>
-		    				</div>
-	    				</div>
-					  </div>
-					  <div id="page-3" class= "page three">
-					  	<h2 class="heading"><span class="icon-gears" style="font-size:1.5rem; color:var(--primary-blue);"></span> Skills</h2>
-					  	<div class="footer-skills" id="main-skills-badges" style="margin-bottom: 1.5rem;">
-					    	<div class="skill-block">
-					    		<span class="skill-badge">
-					    			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><path d="M8 17L3 12L8 7" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7L21 12L16 17" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 3L10 21" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-					    		Programming Languages
-					    	</span>
-					    	<div class="skill-detail-box">PHP, Java, JavaScript, Kotlin, C++, C, Python</div>
-					    </div>
-					    <div class="skill-block">
-					    	<span class="skill-badge">
-					    		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#4361ee" stroke-width="2"/><path d="M3 8H21" stroke="#4361ee" stroke-width="2"/><circle cx="7" cy="6" r="1" fill="#4361ee"/></svg>
-					    		Frontend Development
-					    	</span>
-					    	<div class="skill-detail-box">React, Tailwind CSS, Bootstrap, HTML, CSS, JavaScript</div>
-					    </div>
-					    <div class="skill-block">
-					    	<span class="skill-badge">
-					    		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><ellipse cx="12" cy="6" rx="8" ry="3" stroke="#4361ee" stroke-width="2"/><path d="M4 6V18C4 19.6569 7.58172 21 12 21C16.4183 21 20 19.6569 20 18V6" stroke="#4361ee" stroke-width="2"/><path d="M4 12C4 13.6569 7.58172 15 12 15C16.4183 15 20 13.6569 20 12" stroke="#4361ee" stroke-width="2"/></svg>
-					    		Backend Development
-					    	</span>
-					    	<div class="skill-detail-box">Node.js, Next.js, PHP, CodeIgniter, Python</div>
-					    </div>
-					    <div class="skill-block">
-					    	<span class="skill-badge">
-					    		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><ellipse cx="12" cy="5" rx="9" ry="3" stroke="#4361ee" stroke-width="2"/><path d="M3 5V19C3 20.6569 7.02944 22 12 22C16.9706 22 21 20.6569 21 19V5" stroke="#4361ee" stroke-width="2"/><path d="M3 12C3 13.6569 7.02944 15 12 15C16.9706 15 21 13.6569 21 12" stroke="#4361ee" stroke-width="2"/></svg>
-					    		Database Management
-					    	</span>
-					    	<div class="skill-detail-box">MySQL, Firebase, MongoDB</div>
-					    </div>
-					    <div class="skill-block">
-					    	<span class="skill-badge">
-					    		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><rect x="6" y="2" width="12" height="20" rx="2" stroke="#4361ee" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="#4361ee"/></svg>
-					    		Mobile Development
-					    	</span>
-					    	<div class="skill-detail-box">Android Studio (Java & Kotlin)</div>
-					    </div>
-					    <div class="skill-block">
-					    	<span class="skill-badge">
-					    		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><path d="M14.7 6.3a5 5 0 0 0-6.6 6.6l-5.1 5.1a2 2 0 1 0 2.8 2.8l5.1-5.1a5 5 0 0 0 6.6-6.6z" stroke="#4361ee" stroke-width="2"/></svg>
-					    		Tools & Platforms
-					    	</span>
-					    	<div class="skill-detail-box">cPanel, Linux (Odoo Server Root), API Integration</div>
-					    </div>
-					    <div class="skill-block">
-					    	<span class="skill-badge">
-					    		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><circle cx="6" cy="6" r="3" stroke="#4361ee" stroke-width="2"/><circle cx="18" cy="18" r="3" stroke="#4361ee" stroke-width="2"/><path d="M6 9v6a3 3 0 0 0 3 3h6" stroke="#4361ee" stroke-width="2"/></svg>
-					    		Version Control
-					    	</span>
-					    	<div class="skill-detail-box">Git, GitHub</div>
-					    </div>
-					  </div>
-					</div>
-				  <div id="page-4" class= "page four">
-					    <h2 class="heading">Achievements</h2>
-						<div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-							<div class="text pl-3">
-		    					<span class="date">2025</span>
-		    					<h2>head of Technical Team  </h2>
-		    					<span class="position">Google Developer Groups on Campus: NCTU</span>
-	    					</div>
-	    				</div>
-					    <div class="resume-wrap d-flex ftco-animate">
-					    	<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2023</span>
-		    					<h2>Head of Social Media</h2>
-		    					<span class="position">Google Developer Groups on Campus: NCTU</span>
-	    					</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2022</span>
-		    					<h2>Noah Competition (Twice)</h2>
-		    					<span class="position">Participant</span>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2022</span>
-		    					<h2>Third Youth Forum on Artificial Intelligence</h2>
-		    					<span class="position">Participant</span>
-		    				</div>
-	    				</div>
-	    				<div class="resume-wrap d-flex ftco-animate">
-	    					<div class="icon d-flex align-items-center justify-content-center">
-					    		<span class="flaticon-ideas"></span>
-					    	</div>
-					    	<div class="text pl-3">
-		    					<span class="date">2023</span>
-		    					<h2>Techno Black</h2>
-		    					<span class="position">Contributor to the AI-powered educational platform providing programming courses and language reviews.</span>
-		    				</div>
-	    				</div>
-					  </div>
-					</div>
-			  </div>
-    	</div>
-    </section>
-
-    <section class="projects-section" id="projects-section">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
 		<div class="container">
-		  <div class="section-header">
-			<h1 class="section-title">My <span class="blue-highlight">Projects</span></h1>
-			<p class="section-subtitle">Explore my featured work and professional projects</p>
-		  </div>
-	  
-		  <div class="projects-grid">
-			<!-- Project 1 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/bl.png" alt="BLACK TORNADO" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://blacktornado-games.site" target="_blank" class="project-link">
-					<i class="fas fa-external-link-alt"></i> Visit Site
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">BLACK TORNADO</h3>
-				<p class="project-description">Comprehensive gaming portal offering game information and exclusive free offers for gamers worldwide.</p>
-				<div class="project-tags">
-				  <span class="tag">Web Development</span>
-				  <span class="tag">Gaming</span>
-				</div>
-			  </div>
+			<a class="navbar-brand" href="index.html"><span>A</span>hmed</a>
+			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
+				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav nav ml-auto">
+					<li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+					<li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+					<li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+					<li class="nav-item"><a href="#projects-section" class="nav-link"><span>Projects</span></a></li>
+					<li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+				</ul>
 			</div>
-	  
-			<!-- Project 2 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/teq.png" alt="TECHNO BLACK" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://techno-black.vercel.app/" target="_blank" class="project-link">
-					<i class="fas fa-external-link-alt"></i> Visit Site
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">TECHNO BLACK</h3>
-				<p class="project-description">AI-powered educational platform with intelligent course recommendations and integrated chatbot assistance.</p>
-				<div class="project-tags">
-				  <span class="tag">AI Integration</span>
-				  <span class="tag">EdTech</span>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 3 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/get.png" alt="GLOBAL ELITE TRAVEL" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://www.globalelitetravel.com/" target="_blank" class="project-link">
-					<i class="fas fa-external-link-alt"></i> Visit Site
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">GLOBAL ELITE TRAVEL</h3>
-				<p class="project-description">Premium hotel booking platform specializing in event accommodations and bespoke travel experiences.</p>
-				<div class="project-tags">
-				  <span class="tag">E-commerce</span>
-				  <span class="tag">Travel</span>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 4 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/get2.png" alt="GLOBAL ELITE EGYPT" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://ubiquitous-mandazi-d37ffc.netlify.app/" target="_blank" class="project-link">
-					<i class="fas fa-external-link-alt"></i> Visit Site
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">GLOBAL ELITE EGYPT</h3>
-				<p class="project-description">Corporate showcase website highlighting premium travel services with elegant design.</p>
-				<div class="project-tags">
-				  <span class="tag">Corporate</span>
-				  <span class="tag">Web Design</span>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 5 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/maq.png" alt="MAQINA" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://sparkling-scone-05fc23.netlify.app/" target="_blank" class="project-link">
-					<i class="fas fa-external-link-alt"></i> Visit Site
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">MAQINA</h3>
-				<p class="project-description">Cutting-edge corporate website for AI solutions provider with futuristic interface.</p>
-				<div class="project-tags">
-				  <span class="tag">AI</span>
-				  <span class="tag">Tech</span>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 6 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/oil.png" alt="QUICK LUBE RECALIBRATION" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://heroic-vacherin-f0c9af.netlify.app/" target="_blank" class="project-link">
-					<i class="fas fa-external-link-alt"></i> Visit Site
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">QUICK LUBE RECALIBRATION</h3>
-				<p class="project-description">Custom event management system for oil industry conferences and workshops.</p>
-				<div class="project-tags">
-				  <span class="tag">Event</span>
-				  <span class="tag">Forms</span>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 7 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/ziko.png"  alt="ZIKOLA LAND APP" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <a href="https://com-zikolabooks.ar.uptodown.com/android" target="_blank" class="project-link">
-					<i class="fas fa-mobile-alt"></i> View App
-				  </a>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">ZIKOLA LAND APP</h3>
-				<p class="project-description">Minimalist Android reading application with intuitive book browsing interface.</p>
-				<div class="project-tags">
-				  <span class="tag">Mobile</span>
-				  <span class="tag">Kotlin</span>
-				</div>
-			  </div>
-			</div>
-	  
-			<!-- Project 8 -->
-			<div class="project-card">
-			  <div class="project-image-container">
-				<img src="images/pet.jpg" alt="MY PET" loading="lazy" class="project-image">
-				<div class="project-overlay">
-				  <span class="project-link no-link">
-					<i class="fas fa-university"></i> Academic Project
-				  </span>
-				</div>
-			  </div>
-			  <div class="project-info">
-				<h3 class="project-title">MY PET</h3>
-				<p class="project-description">Comprehensive pet care ecosystem with marketplace, adoption services, and vet connections.</p>
-				<div class="project-tags">
-				  <span class="tag">Full-stack</span>
-				  <span class="tag">University</span>
-				</div>
-			  </div>
-			</div>
-	  
-      <!-- Project 9 -->
-      <div class="project-card">
-        <div class="project-image-container">
-          <img src="images/odoo.webp" alt="HOTEL MANAGEMENT SYSTEM" loading="lazy" class="project-image">
-          <div class="project-overlay">
-            <span class="project-link no-link">
-              <i class="fas fa-university"></i> On-Premises ERP
-            </span>
-          </div>
-        </div>
-        <div class="project-info">
-          <h3 class="project-title">HOTEL MANAGEMENT SYSTEM</h3>
-          <p class="project-description">Developed a full hotel management ERP system using Odoo 16 as part of Global Elite. Modular ERP covers Accounting, Sales, Marketing, Email Management, and other business-specific modules. Deployed on-premises on a Linux (Ubuntu) server.</p>
-          <div class="project-tags">
-            <span class="tag">Odoo 16</span>
-            <span class="tag">ERP</span>
-            <span class="tag">Python</span>
-            <span class="tag">PostgreSQL</span>
-            <span class="tag">Linux</span>
-            <span class="tag">Local Hosting</span>
-          </div>
-        </div>
-      </div>
-		  </div>
 		</div>
-	  </section>
+	</nav>
+	<section class="hero-wrap js-fullheight" id="home-section">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+				<div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+					<div class="text text-center">
+						<span class="subheading">Hello! I am</span>
+						<h1>Ahmed Saeed Farouk</h1>
+						<h2>I'm a <span class="txt-rotate" data-period="2000"
+								data-rotate='[ "Software Engineer.", "Odoo Developer.", "IT Specialist." ]'></span></h2>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="mouse">
+			<a href="#" class="mouse-icon">
+				<div class="mouse-wheel"><span class="ion-ios-arrow-round-down"></span></div>
+			</a>
+		</div>
+	</section>
+
+	<section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+		<div class="container">
+			<div class="row d-flex no-gutters">
+				<div class="col-md-6 col-lg-6 d-flex">
+					<div class="img-about img d-flex align-items-stretch justify-content-center align-items-center">
+						<div class="overlay"></div>
+						<div class="img d-flex align-self-stretch align-items-center justify-content-center"
+							style="background-image:url(images/image.png); width:460px; height:460px; background-size:cover; background-position:center; border-radius:50%; margin:auto;">
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-6 pl-md-5 py-5">
+					<div class="row justify-content-start pb-3">
+						<div class="col-md-12 heading-section ftco-animate">
+							<h1 class="big">About</h1>
+							<h2 class="mb-4">About Me</h2>
+							<h4 class="mb-3">Software Engineer | Odoo Developer | IT Specialist</h4>
+							<p>Full Stack Developer skilled in web development (Frontend & Backend), Android app
+								development using native Kotlin, and Odoo customization.<br>Develop and manage
+								electronic systems using PHP and CodeIgniter.<br>Oversee control panels for company
+								websites using cPanel.<br>Ensure system efficiency and troubleshoot technical
+								issues.<br>Develop and customize Odoo ERP modules.<br>Head of Social Media – Google
+								Developer Groups on Campus: NCTU.<br>Participated in "Noah" Competition
+								(Twice).<br>Participant in the Third Youth Forum on Artificial Intelligence.<br>Techno
+								Black: Contributor to the AI-powered educational platform providing programming courses
+								and language reviews.</p>
+							<ul class="about-info mt-4 px-md-0 px-2">
+								<li class="d-flex"><span>Name:</span> <span>Ahmed Saeed Farouk</span></li>
+								<li class="d-flex"><span>Address:</span> <span>Egypt</span></li>
+								<li class="d-flex"><span>Email:</span> <span><a
+											href="mailto:ahmedsaeedfarouk.bt@gmail.com">ahmedsaeedfarouk.bt@gmail.com</a></span>
+								</li>
+								<li class="d-flex"><span>Phone: </span> <span><a
+											href="tel:+201027789053">+201027789053</a></span></li>
+								<li class="d-flex"><span>LinkedIn:</span> <span><a
+											href="https://www.linkedin.com/in/ahmed-saeed-579921321/"
+											target="_blank">ahmed-saeed-579921321</a></span></li>
+								<li class="d-flex"><span>GitHub:</span> <span><a href="https://github.com/ahmedBT909"
+											target="_blank">ahmedBT909</a></span></li>
+							</ul>
+						</div>
+					</div>
+					<div class="counter-wrap ftco-animate d-flex mt-md-3">
+						<div class="text">
+							<p><a href="CV_AhmedSaeed (1).pdf" class="btn btn-primary py-3 px-3" download>Download
+									CV</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
 
-    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
-      <div class="container">
-        <div class="row justify-content-center mb-5 pb-3">
-          <div class="col-md-7 heading-section text-center ftco-animate">
-            <h1 class="big big-2">Contact</h1>
-            <h2 class="mb-4">Contact Me</h2>
-            <p>Feel free to reach out to me through any of the following methods:</p>
-          </div>
-        </div>
+	<section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3">
+					<nav id="navi">
+						<ul>
+							<li><a href="#page-1">Education</a></li>
+							<li><a href="#page-2">Experience</a></li>
+							<li><a href="#page-3">Skills</a></li>
+							<li><a href="#page-4">Achievements</a></li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-md-9">
+					<div id="page-1" class="page one">
+						<h2 class="heading">Education</h2>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Sep 2019 - July 2022</span>
+								<h2>Programming Diploma</h2>
+								<span class="position">International Academy of Computers, Egypt</span>
+								<p>Diploma in Computer Science</p>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Sep 2022 - Present</span>
+								<h2>Software Engineering</h2>
+								<span class="position">New Cairo Technological University, Faculty of Information
+									Technology</span>
+							</div>
+						</div>
+					</div>
 
-        <div class="row d-flex contact-info mb-5 justify-content-center">
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-phone2"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">Phone</h3>
-                <p><a href="tel:+201027789053">+201027789053</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-paper-plane"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">Email</h3>
-                <p><a href="mailto:ahmedsaeedfarouk.bt@gmail.com">ahmedsaeedfarouk.bt</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-linkedin"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">LinkedIn</h3>
-                <p><a href="https://www.linkedin.com/in/ahmed-saeed-579921321/" target="_blank">@ahmed-saeed-579921321</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3 d-flex ftco-animate">
-            <div class="align-self-stretch box text-center p-4 shadow">
-              <div class="icon d-flex align-items-center justify-content-center">
-                <span class="icon-github"></span>
-              </div>
-              <div>
-                <h3 class="mb-4">GitHub</h3>
-                <p><a href="https://github.com/ahmedBT909" target="_blank">@ahmedBT909</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
+					<div id="page-2" class="page two">
+						<h2 class="heading">Experience</h2>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">Aug 2024 - Present</span>
+								<h2>Global Elite</h2>
+								<span class="position">Software Engineering | IT Specialist | Odoo Developer</span>
+								<p>Develop and manage electronic systems using PHP and CodeIgniter. Oversee control
+									panels for company websites using cPanel. Ensure system efficiency and troubleshoot
+									technical issues. Develop and customize Odoo ERP modules.</p>
+							</div>
+						</div>
+					</div>
+					<div id="page-3" class="page three">
+						<h2 class="heading"><span class="icon-gears"
+								style="font-size:1.5rem; color:var(--primary-blue);"></span> Skills</h2>
+						<div class="footer-skills" id="main-skills-badges" style="margin-bottom: 1.5rem;">
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<path d="M8 17L3 12L8 7" stroke="#4361ee" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M16 7L21 12L16 17" stroke="#4361ee" stroke-width="2"
+											stroke-linecap="round" stroke-linejoin="round" />
+										<path d="M14 3L10 21" stroke="#4361ee" stroke-width="2" stroke-linecap="round"
+											stroke-linejoin="round" />
+									</svg>
+									Programming Languages
+								</span>
+								<div class="skill-detail-box">PHP, Java, JavaScript, Kotlin, C++, C, Python</div>
+							</div>
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<rect x="3" y="4" width="18" height="16" rx="2" stroke="#4361ee"
+											stroke-width="2" />
+										<path d="M3 8H21" stroke="#4361ee" stroke-width="2" />
+										<circle cx="7" cy="6" r="1" fill="#4361ee" />
+									</svg>
+									Frontend Development
+								</span>
+								<div class="skill-detail-box">React, Tailwind CSS, Bootstrap, HTML, CSS, JavaScript
+								</div>
+							</div>
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<ellipse cx="12" cy="6" rx="8" ry="3" stroke="#4361ee" stroke-width="2" />
+										<path d="M4 6V18C4 19.6569 7.58172 21 12 21C16.4183 21 20 19.6569 20 18V6"
+											stroke="#4361ee" stroke-width="2" />
+										<path d="M4 12C4 13.6569 7.58172 15 12 15C16.4183 15 20 13.6569 20 12"
+											stroke="#4361ee" stroke-width="2" />
+									</svg>
+									Backend Development
+								</span>
+								<div class="skill-detail-box">Node.js, Next.js, PHP, CodeIgniter, Python</div>
+							</div>
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<ellipse cx="12" cy="5" rx="9" ry="3" stroke="#4361ee" stroke-width="2" />
+										<path d="M3 5V19C3 20.6569 7.02944 22 12 22C16.9706 22 21 20.6569 21 19V5"
+											stroke="#4361ee" stroke-width="2" />
+										<path d="M3 12C3 13.6569 7.02944 15 12 15C16.9706 15 21 13.6569 21 12"
+											stroke="#4361ee" stroke-width="2" />
+									</svg>
+									Database Management
+								</span>
+								<div class="skill-detail-box">MySQL, Firebase, MongoDB</div>
+							</div>
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<rect x="6" y="2" width="12" height="20" rx="2" stroke="#4361ee"
+											stroke-width="2" />
+										<circle cx="12" cy="18" r="1" fill="#4361ee" />
+									</svg>
+									Mobile Development
+								</span>
+								<div class="skill-detail-box">Android Studio (Java & Kotlin)</div>
+							</div>
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<path
+											d="M14.7 6.3a5 5 0 0 0-6.6 6.6l-5.1 5.1a2 2 0 1 0 2.8 2.8l5.1-5.1a5 5 0 0 0 6.6-6.6z"
+											stroke="#4361ee" stroke-width="2" />
+									</svg>
+									Tools & Platforms
+								</span>
+								<div class="skill-detail-box">cPanel, Linux (Odoo Server Root), API Integration</div>
+							</div>
+							<div class="skill-block">
+								<span class="skill-badge">
+									<svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+										style="vertical-align:middle;">
+										<circle cx="6" cy="6" r="3" stroke="#4361ee" stroke-width="2" />
+										<circle cx="18" cy="18" r="3" stroke="#4361ee" stroke-width="2" />
+										<path d="M6 9v6a3 3 0 0 0 3 3h6" stroke="#4361ee" stroke-width="2" />
+									</svg>
+									Version Control
+								</span>
+								<div class="skill-detail-box">Git, GitHub</div>
+							</div>
+						</div>
+					</div>
+					<div id="page-4" class="page four">
+						<h2 class="heading">Achievements</h2>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2025</span>
+								<h2>head of Technical Team </h2>
+								<span class="position">Google Developer Groups on Campus: NCTU</span>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2023</span>
+								<h2>Head of Social Media</h2>
+								<span class="position">Google Developer Groups on Campus: NCTU</span>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2022</span>
+								<h2>Noah Competition (Twice)</h2>
+								<span class="position">Participant</span>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2022</span>
+								<h2>Third Youth Forum on Artificial Intelligence</h2>
+								<span class="position">Participant</span>
+							</div>
+						</div>
+						<div class="resume-wrap d-flex ftco-animate">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="flaticon-ideas"></span>
+							</div>
+							<div class="text pl-3">
+								<span class="date">2023</span>
+								<h2>Techno Black</h2>
+								<span class="position">Contributor to the AI-powered educational platform providing
+									programming courses and language reviews.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-      </div>
-    </section>
-		
+	<section class="projects-section" id="projects-section">
+		<div class="container">
+			<div class="section-header">
+				<h1 class="section-title">My <span class="blue-highlight">Projects</span></h1>
+				<p class="section-subtitle">Explore my featured work and professional projects</p>
+			</div>
 
-    <footer class="ftco-footer ftco-section">
-      <div class="container" style="padding-top: 20px; padding-bottom: 10px;">
-        <div class="row mb-2" style="margin-bottom: 10px !important;">
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">About</h2>
-              <p>Ahmed Saeed Farouk - Software Engineer | Odoo Developer | IT Specialist.<br>Email: <a href="mailto:ahmedsaeedfarouk.bt@gmail.com">ahmedsaeedfarouk.bt@gmail.com</a><br>Phone: <a href="tel:+201027789053">+201027789053</a></p>
-              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-                <li class="ftco-animate"><a href="https://www.instagram.com/ahmedsaidbt/" target="_blank"><span class="icon-instagram"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.facebook.com/ahmedBT909/" target="_blank"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.linkedin.com/in/ahmed-saeed-579921321/" target="_blank"><span class="icon-linkedin"></span></a></li>
-                <li class="ftco-animate"><a href="https://github.com/ahmedBT909" target="_blank"><span class="icon-github"></span></a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4 ml-md-4">
-              <h2 class="ftco-heading-2">Links</h2>
-              <ul class="list-unstyled">
-                <li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
-                <li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
-                <li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a></li>
-                <li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a></li>
-                <li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="ftco-footer-widget mb-4">
-              <h2 class="ftco-heading-2">Skills</h2>
-              <div class="footer-skills">
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><path d="M8 17L3 12L8 7" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 7L21 12L16 17" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 3L10 21" stroke="#4361ee" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                  Programming Languages
-                </span>
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><rect x="3" y="4" width="18" height="16" rx="2" stroke="#4361ee" stroke-width="2"/><path d="M3 8H21" stroke="#4361ee" stroke-width="2"/><circle cx="7" cy="6" r="1" fill="#4361ee"/></svg>
-                  Frontend Development
-                </span>
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><ellipse cx="12" cy="6" rx="8" ry="3" stroke="#4361ee" stroke-width="2"/><path d="M4 6V18C4 19.6569 7.58172 21 12 21C16.4183 21 20 19.6569 20 18V6" stroke="#4361ee" stroke-width="2"/><path d="M4 12C4 13.6569 7.58172 15 12 15C16.4183 15 20 13.6569 20 12" stroke="#4361ee" stroke-width="2"/></svg>
-                  Backend Development
-                </span>
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><ellipse cx="12" cy="5" rx="9" ry="3" stroke="#4361ee" stroke-width="2"/><path d="M3 5V19C3 20.6569 7.02944 22 12 22C16.9706 22 21 20.6569 21 19V5" stroke="#4361ee" stroke-width="2"/><path d="M3 12C3 13.6569 7.02944 15 12 15C16.9706 15 21 13.6569 21 12" stroke="#4361ee" stroke-width="2"/></svg>
-                  Database Management
-                </span>
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><rect x="6" y="2" width="12" height="20" rx="2" stroke="#4361ee" stroke-width="2"/><circle cx="12" cy="18" r="1" fill="#4361ee"/></svg>
-                  Mobile Development
-                </span>
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><path d="M14.7 6.3a5 5 0 0 0-6.6 6.6l-5.1 5.1a2 2 0 1 0 2.8 2.8l5.1-5.1a5 5 0 0 0 6.6-6.6z" stroke="#4361ee" stroke-width="2"/></svg>
-                  Tools & Platforms
-                </span>
-                <span class="skill-badge">
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="vertical-align:middle;"><circle cx="6" cy="6" r="3" stroke="#4361ee" stroke-width="2"/><circle cx="18" cy="18" r="3" stroke="#4361ee" stroke-width="2"/><path d="M6 9v6a3 3 0 0 0 3 3h6" stroke="#4361ee" stroke-width="2"/></svg>
-                  Version Control
-                </span>
-              </div>
-            </div>
-          </div>
-          <!-- Removed address/Have a Questions section as requested -->
-        </div>
-        <div class="row" style="margin-bottom: 0;">
-          <div class="col-md-12 text-center" style="padding-bottom: 5px;">
-            <p>
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | Ahmed Saeed Farouk
-  </p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    
-  
+			<div class="projects-grid">
+				<!-- Project 1 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/bl.png" alt="BLACK TORNADO" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://blacktornado-games.site" target="_blank" class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">BLACK TORNADO</h3>
+						<p class="project-description">Comprehensive gaming portal offering game information and
+							exclusive free offers for gamers worldwide.</p>
+						<div class="project-tags">
+							<span class="tag">Web Development</span>
+							<span class="tag">Gaming</span>
+						</div>
+					</div>
+				</div>
 
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+				<!-- Project 2 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/teq.png" alt="TECHNO BLACK" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://techno-black.vercel.app/" target="_blank" class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">TECHNO BLACK</h3>
+						<p class="project-description">AI-powered educational platform with intelligent course
+							recommendations and integrated chatbot assistance.</p>
+						<div class="project-tags">
+							<span class="tag">AI Integration</span>
+							<span class="tag">EdTech</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 3 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/get.png" alt="GLOBAL ELITE TRAVEL" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://www.globalelitetravel.com/" target="_blank" class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">GLOBAL ELITE TRAVEL</h3>
+						<p class="project-description">Premium hotel booking platform specializing in event
+							accommodations and bespoke travel experiences.</p>
+						<div class="project-tags">
+							<span class="tag">E-commerce</span>
+							<span class="tag">Travel</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 4 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/get2.png" alt="GLOBAL ELITE EGYPT" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://ubiquitous-mandazi-d37ffc.netlify.app/" target="_blank"
+								class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">GLOBAL ELITE EGYPT</h3>
+						<p class="project-description">Corporate showcase website highlighting premium travel services
+							with elegant design.</p>
+						<div class="project-tags">
+							<span class="tag">Corporate</span>
+							<span class="tag">Web Design</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 5 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/maq.png" alt="MAQINA" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://sparkling-scone-05fc23.netlify.app/" target="_blank" class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">MAQINA</h3>
+						<p class="project-description">Cutting-edge corporate website for AI solutions provider with
+							futuristic interface.</p>
+						<div class="project-tags">
+							<span class="tag">AI</span>
+							<span class="tag">Tech</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 6 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/oil.png" alt="QUICK LUBE RECALIBRATION" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://heroic-vacherin-f0c9af.netlify.app/" target="_blank" class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">QUICK LUBE RECALIBRATION</h3>
+						<p class="project-description">Custom event management system for oil industry conferences and
+							workshops.</p>
+						<div class="project-tags">
+							<span class="tag">Event</span>
+							<span class="tag">Forms</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 7 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/ziko.png" alt="ZIKOLA LAND APP" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<a href="https://com-zikolabooks.ar.uptodown.com/android" target="_blank"
+								class="project-link">
+								<i class="fas fa-mobile-alt"></i> View App
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">ZIKOLA LAND APP</h3>
+						<p class="project-description">Minimalist Android reading application with intuitive book
+							browsing interface.</p>
+						<div class="project-tags">
+							<span class="tag">Mobile</span>
+							<span class="tag">Kotlin</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 8 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/pet.jpg" alt="MY PET" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<span class="project-link no-link">
+								<i class="fas fa-university"></i> Academic Project
+							</span>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">MY PET</h3>
+						<p class="project-description">Comprehensive pet care ecosystem with marketplace, adoption
+							services, and vet connections.</p>
+						<div class="project-tags">
+							<span class="tag">Full-stack</span>
+							<span class="tag">University</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 9 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/odoo.webp" alt="HOTEL MANAGEMENT SYSTEM" loading="lazy" class="project-image">
+						<div class="project-overlay">
+							<span class="project-link no-link">
+								<i class="fas fa-university"></i> On-Premises ERP
+							</span>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">HOTEL MANAGEMENT SYSTEM</h3>
+						<p class="project-description">Developed a full hotel management ERP system using Odoo 16 as
+							part of Global Elite. Modular ERP covers Accounting, Sales, Marketing, Email Management, and
+							other business-specific modules. Deployed on-premises on a Linux (Ubuntu) server.</p>
+						<div class="project-tags">
+							<span class="tag">Odoo 16</span>
+							<span class="tag">ERP</span>
+							<span class="tag">Python</span>
+							<span class="tag">PostgreSQL</span>
+							<span class="tag">Linux</span>
+							<span class="tag">Local Hosting</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Project 10 -->
+				<div class="project-card">
+					<div class="project-image-container">
+						<img src="images/SOUR.png" alt="SOURCING CASTLE" loading="lazy"
+							class="project-image">
+						<div class="project-overlay">
+							<a href="https://marvelous-sfogliatella-c67047.netlify.app/" target="_blank"
+								class="project-link">
+								<i class="fas fa-external-link-alt"></i> Visit Site
+							</a>
+						</div>
+					</div>
+					<div class="project-info">
+						<h3 class="project-title">SOURCING CASTLE</h3>
+						<p class="project-description">
+							A professional landing page for a real estate company offering services like cold calling,
+							lead generation, data-driven insights, and property acquisition. Designed for clarity,
+							engagement, and conversion.
+						</p>
+						<div class="project-tags">
+							<span class="tag">Web Development</span>
+							<span class="tag">Real Estate</span>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
 
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery-migrate-3.0.1.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.easing.1.3.js"></script>
-  <script src="js/jquery.waypoints.min.js"></script>
-  <script src="js/jquery.stellar.min.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/aos.js"></script>
-  <script src="js/jquery.animateNumber.min.js"></script>
-  <script src="js/scrollax.min.js"></script>
-  
-  <script src="js/main.js"></script>
-    
-  </body>
+
+	<section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+		<div class="container">
+			<div class="row justify-content-center mb-5 pb-3">
+				<div class="col-md-7 heading-section text-center ftco-animate">
+					<h1 class="big big-2">Contact</h1>
+					<h2 class="mb-4">Contact Me</h2>
+					<p>Feel free to reach out to me through any of the following methods:</p>
+				</div>
+			</div>
+
+			<div class="row d-flex contact-info mb-5 justify-content-center">
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-phone2"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">Phone</h3>
+							<p><a href="tel:+201027789053">+201027789053</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-paper-plane"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">Email</h3>
+							<p><a href="mailto:ahmedsaeedfarouk.bt@gmail.com">ahmedsaeedfarouk.bt</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-linkedin"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">LinkedIn</h3>
+							<p><a href="https://www.linkedin.com/in/ahmed-saeed-579921321/"
+									target="_blank">@ahmed-saeed-579921321</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-lg-3 d-flex ftco-animate">
+					<div class="align-self-stretch box text-center p-4 shadow">
+						<div class="icon d-flex align-items-center justify-content-center">
+							<span class="icon-github"></span>
+						</div>
+						<div>
+							<h3 class="mb-4">GitHub</h3>
+							<p><a href="https://github.com/ahmedBT909" target="_blank">@ahmedBT909</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+
+	<footer class="ftco-footer ftco-section">
+		<div class="container" style="padding-top: 20px; padding-bottom: 10px;">
+			<div class="row mb-2" style="margin-bottom: 10px !important;">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">About</h2>
+						<p>Ahmed Saeed Farouk - Software Engineer | Odoo Developer | IT Specialist.<br>Email: <a
+								href="mailto:ahmedsaeedfarouk.bt@gmail.com">ahmedsaeedfarouk.bt@gmail.com</a><br>Phone:
+							<a href="tel:+201027789053">+201027789053</a>
+						</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="https://www.instagram.com/ahmedsaidbt/"
+									target="_blank"><span class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/ahmedBT909/"
+									target="_blank"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/in/ahmed-saeed-579921321/"
+									target="_blank"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://github.com/ahmedBT909" target="_blank"><span
+										class="icon-github"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-4">
+						<h2 class="ftco-heading-2">Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#home-section"><span class="icon-long-arrow-right mr-2"></span>Home</a></li>
+							<li><a href="#about-section"><span class="icon-long-arrow-right mr-2"></span>About</a></li>
+							<li><a href="#resume-section"><span class="icon-long-arrow-right mr-2"></span>Resume</a>
+							</li>
+							<li><a href="#projects-section"><span class="icon-long-arrow-right mr-2"></span>Projects</a>
+							</li>
+							<li><a href="#contact-section"><span class="icon-long-arrow-right mr-2"></span>Contact</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Skills</h2>
+						<div class="footer-skills">
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<path d="M8 17L3 12L8 7" stroke="#4361ee" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M16 7L21 12L16 17" stroke="#4361ee" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+									<path d="M14 3L10 21" stroke="#4361ee" stroke-width="2" stroke-linecap="round"
+										stroke-linejoin="round" />
+								</svg>
+								Programming Languages
+							</span>
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<rect x="3" y="4" width="18" height="16" rx="2" stroke="#4361ee" stroke-width="2" />
+									<path d="M3 8H21" stroke="#4361ee" stroke-width="2" />
+									<circle cx="7" cy="6" r="1" fill="#4361ee" />
+								</svg>
+								Frontend Development
+							</span>
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<ellipse cx="12" cy="6" rx="8" ry="3" stroke="#4361ee" stroke-width="2" />
+									<path d="M4 6V18C4 19.6569 7.58172 21 12 21C16.4183 21 20 19.6569 20 18V6"
+										stroke="#4361ee" stroke-width="2" />
+									<path d="M4 12C4 13.6569 7.58172 15 12 15C16.4183 15 20 13.6569 20 12"
+										stroke="#4361ee" stroke-width="2" />
+								</svg>
+								Backend Development
+							</span>
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<ellipse cx="12" cy="5" rx="9" ry="3" stroke="#4361ee" stroke-width="2" />
+									<path d="M3 5V19C3 20.6569 7.02944 22 12 22C16.9706 22 21 20.6569 21 19V5"
+										stroke="#4361ee" stroke-width="2" />
+									<path d="M3 12C3 13.6569 7.02944 15 12 15C16.9706 15 21 13.6569 21 12"
+										stroke="#4361ee" stroke-width="2" />
+								</svg>
+								Database Management
+							</span>
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<rect x="6" y="2" width="12" height="20" rx="2" stroke="#4361ee" stroke-width="2" />
+									<circle cx="12" cy="18" r="1" fill="#4361ee" />
+								</svg>
+								Mobile Development
+							</span>
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<path
+										d="M14.7 6.3a5 5 0 0 0-6.6 6.6l-5.1 5.1a2 2 0 1 0 2.8 2.8l5.1-5.1a5 5 0 0 0 6.6-6.6z"
+										stroke="#4361ee" stroke-width="2" />
+								</svg>
+								Tools & Platforms
+							</span>
+							<span class="skill-badge">
+								<svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+									style="vertical-align:middle;">
+									<circle cx="6" cy="6" r="3" stroke="#4361ee" stroke-width="2" />
+									<circle cx="18" cy="18" r="3" stroke="#4361ee" stroke-width="2" />
+									<path d="M6 9v6a3 3 0 0 0 3 3h6" stroke="#4361ee" stroke-width="2" />
+								</svg>
+								Version Control
+							</span>
+						</div>
+					</div>
+				</div>
+				<!-- Removed address/Have a Questions section as requested -->
+			</div>
+			<div class="row" style="margin-bottom: 0;">
+				<div class="col-md-12 text-center" style="padding-bottom: 5px;">
+					<p>
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | Ahmed Saeed
+						Farouk
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+
+	<script src="js/main.js"></script>
+
+</body>
+
 </html>
