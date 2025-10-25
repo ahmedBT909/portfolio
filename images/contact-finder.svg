@@ -1,0 +1,49 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4361ee;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#3a0ca3;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="card" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f8f9fa;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg)"/>
+  
+  <!-- Main card -->
+  <rect x="50" y="50" width="300" height="200" rx="15" fill="url(#card)" stroke="#e9ecef" stroke-width="2"/>
+  
+  <!-- Title -->
+  <text x="200" y="90" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#212529">📇 Contact Finder</text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="115" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#6c757d">Web Scraping Tool</text>
+  
+  <!-- Python icon -->
+  <circle cx="120" cy="160" r="20" fill="#3776ab"/>
+  <text x="120" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="white">Py</text>
+  
+  <!-- Streamlit icon -->
+  <rect x="180" y="140" width="40" height="40" rx="8" fill="#ff4b4b"/>
+  <text x="200" y="168" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white">SL</text>
+  
+  <!-- Web scraping icon -->
+  <circle cx="280" cy="160" r="20" fill="#28a745"/>
+  <path d="M270 150 L290 150 L290 170 L270 170 Z" fill="white"/>
+  <circle cx="275" cy="155" r="2" fill="#28a745"/>
+  <circle cx="285" cy="155" r="2" fill="#28a745"/>
+  <circle cx="275" cy="165" r="2" fill="#28a745"/>
+  <circle cx="285" cy="165" r="2" fill="#28a745"/>
+  
+  <!-- Features text -->
+  <text x="200" y="200" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#6c757d">DuckDuckGo • Google Search • Email Extraction</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="80" cy="80" r="3" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="320" cy="100" r="2" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="60" cy="220" r="2" fill="rgba(255,255,255,0.3)"/>
+  <circle cx="340" cy="200" r="3" fill="rgba(255,255,255,0.3)"/>
+</svg>
